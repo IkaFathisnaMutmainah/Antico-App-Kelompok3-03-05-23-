@@ -13,7 +13,7 @@ app.use(express.urlencoded({ extended: true }));
 const db = require("./models");
 db.sequelize.sync();
 
-app.get("/", (req, res) => {
+app.get('/', (req, res) => {
   res.send("Hallo kami dari kelompok Antico");
 });
 
